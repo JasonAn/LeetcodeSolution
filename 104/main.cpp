@@ -2,6 +2,7 @@
 
 using namespace std;
 
+<<<<<<< Updated upstream
 
 //Definition for a binary tree node.
 
@@ -10,10 +11,20 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+=======
+// Definition for a binary tree node.
+
+struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+>>>>>>> Stashed changes
 };
 
 class Solution {
 public:
+<<<<<<< Updated upstream
 
     int dfs(TreeNode *root) {
         if (root == NULL)
@@ -25,6 +36,14 @@ public:
     int maxDepth(TreeNode* root) {
 
         return dfs(root);
+=======
+    int maxDepth(TreeNode* root) {
+
+        if (root == nullptr)
+            return 0;
+        return 1 + max(maxDepth(root->left), maxDepth(root->right));
+
+>>>>>>> Stashed changes
     }
 };
 
