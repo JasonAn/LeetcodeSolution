@@ -19,7 +19,7 @@ public:
 
         else if (root->left == nullptr) {
             root->left = root->right;
-            root->right == nullptr;
+            root->right = nullptr;
             invertTree(root->left);
         }
 
@@ -49,10 +49,10 @@ int main() {
 
     Solution a;
 
-//    cout << a.invertTree(root);
+    a.invertTree(root);
     cout << root->val << endl;
-//    cout << root->left->val << endl;
-    cout << root->right->val << endl;
+    cout << root->left->val << endl;
+//    cout << root->right->val << endl;
 
     return 0;
 }
