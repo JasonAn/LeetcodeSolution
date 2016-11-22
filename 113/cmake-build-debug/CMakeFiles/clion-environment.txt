@@ -1,0 +1,1 @@
+CMake: 3.6.2@/media/jason/Program/Jetbrains/clion/bin/cmake/bin/cmake
